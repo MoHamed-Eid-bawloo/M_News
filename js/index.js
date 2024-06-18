@@ -15,7 +15,7 @@ let GeneralBtn = document.getElementById("genral"),
 let API_KEY = "d6a3a659380748ae80469a62b12d204c";
 
 const getNews = async (input) => {
-    Type.innerText=input
+  Type.innerText=input
   res = await fetch(`https://newsapi.org/v2/everything?q=${input}&apiKey=${API_KEY}`);
   let jsonData = await res.json();
   newsType.innerHTML = ""; // Clear the previous news...
